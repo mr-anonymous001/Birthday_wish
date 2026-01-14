@@ -1,0 +1,152 @@
+/* ═══════════════════════════════════════════════════════════════
+   WISHES PAGE - Rose Gold Theme
+   ═══════════════════════════════════════════════════════════════ */
+
+.wishes-main {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishes-container {
+    max-width: 680px;
+    width: 100%;
+}
+
+.wishes-paper {
+    background: var(--warm-white);
+    padding: 3rem;
+    box-shadow: var(--shadow-strong);
+    border-radius: 4px;
+    position: relative;
+    min-height: 480px;
+    border: 1px solid rgba(183, 110, 121, 0.08);
+}
+
+.paper-line {
+    position: absolute;
+    left: 75px;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    background: linear-gradient(180deg,
+            transparent,
+            var(--rose-gold-light) 20%,
+            var(--rose-gold-light) 80%,
+            transparent);
+    opacity: 0.5;
+}
+
+.wish-content {
+    padding-left: 2rem;
+}
+
+.wish-item {
+    margin-bottom: 1.8rem;
+    position: relative;
+    padding-left: 1.8rem;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.wish-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.wish-item:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.wish-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.wish-item:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+.wish-item:nth-child(5) {
+    animation-delay: 0.7s;
+}
+
+.wish-item::before {
+    content: '♡';
+    position: absolute;
+    left: 0;
+    color: var(--rose-gold);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.wish-text {
+    font-family: 'Caveat', cursive;
+    font-size: 1.35rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.paper-footer {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(183, 110, 121, 0.15);
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.paper-footer p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+}
+
+.paper-footer .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: var(--rose-gold);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.next-link {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .wishes-paper {
+        padding: 2rem 1.5rem;
+    }
+
+    .wish-text {
+        font-size: 1.15rem;
+    }
+
+    .paper-line {
+        left: 45px;
+    }
+
+    .wish-content {
+        padding-left: 1rem;
+    }
+
+    .paper-footer .signature {
+        font-size: 1.3rem;
+    }
+}
