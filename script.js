@@ -6,6 +6,34 @@ const cardWrapper = document.getElementById('cardWrapper');
 const greetingCard = document.getElementById('greetingCard');
 const openButton = document.getElementById('openButton');
 const nextHint = document.getElementById('nextHint');
+const viewButton = document.getElementById('viewButton');
+
+// Check if bypass is enabled
+function isBypassEnabled() {
+    return localStorage.getItem('bypassTimer') === 'true';
+}
+
+// Enable bypass
+function enableBypass() {
+    localStorage.setItem('bypassTimer', 'true');
+    showCard();
+}
+
+// Show card (bypass timer)
+function showCard() {
+    if (countdownWrapper) {
+        countdownWrapper.style.display = 'none';
+    }
+    if (cardWrapper) {
+        cardWrapper.style.display = 'block';
+        cardWrapper.classList.add('revealed');
+    }
+}
+
+// Check bypass on load
+if (isBypassEnabled()) {
+    showCard();
+}
 
 // Timer elements
 const daysEl = document.getElementById('days');
@@ -40,11 +68,22 @@ function updateCountdown() {
     return false; // Timer still running
 }
 
-// Initial update
-const isComplete = updateCountdown();
+// View button functionality
+if (viewButton) {
+    viewButton.addEventListener('click', function (e) {
+        e.stopPropagation();
+        enableBypass();
+    });
+}
 
-// Update every second if not complete
-if (!isComplete) {
+// Initial update (only if bypass is not enabled)
+let isComplete = false;
+if (!isBypassEnabled()) {
+    isComplete = updateCountdown();
+}
+
+// Update every second if not complete and bypass is not enabled
+if (!isComplete && !isBypassEnabled()) {
     const timerInterval = setInterval(() => {
         if (updateCountdown()) {
             clearInterval(timerInterval);

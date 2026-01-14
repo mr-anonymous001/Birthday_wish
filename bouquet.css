@@ -1,8 +1,8 @@
 /* ═══════════════════════════════════════════════════════════════
-   GIFT/BOUQUET PAGE - Rose Gold Theme
+   BOUQUET PAGE - Rose Gold Theme
    ═══════════════════════════════════════════════════════════════ */
 
-.gift-main {
+.bouquet-main {
     position: relative;
     z-index: 1;
     min-height: 100vh;
@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.gift-container {
+.bouquet-container {
     max-width: 680px;
     width: 100%;
     text-align: center;

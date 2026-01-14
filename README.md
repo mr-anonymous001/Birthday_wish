@@ -7,7 +7,7 @@ A beautiful, interactive birthday website created with HTML, CSS, and JavaScript
 - 🎂 **Home Page** - Beautiful animated birthday card
 - 💝 **Wishes Page** - Unique wish cards with beautiful designs
 - 🕯️ **Cake Page** - Interactive cake with blowable candles
-- 🎁 **Gift Page** - Virtual gift box with special surprises
+- 🌸 **Bouquet Page** - Virtual bouquet of flowers with special surprises
 - 💖 **Message Page** - Heartfelt apology and message
 
 ## Deployment on Vercel
@@ -61,14 +61,14 @@ Birthday/
 ├── index.html          # Home page
 ├── wishes.html         # Wishes page
 ├── cake.html          # Cake page
-├── gift.html          # Gift page
+├── bouquet.html       # Bouquet page
 ├── sorry.html         # Message page
 ├── styles.css         # Main styles
 ├── wishes.css         # Wishes page styles
 ├── cake.css           # Cake page styles
 ├── cake.js            # Cake interactions
-├── gift.css           # Gift page styles
-├── gift.js            # Gift interactions
+├── bouquet.css        # Bouquet page styles
+├── bouquet.js         # Bouquet interactions
 ├── sorry.css          # Message page styles
 ├── sorry.js           # Message page scripts
 ├── script.js          # Main scripts
