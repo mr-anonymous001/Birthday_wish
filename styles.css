@@ -211,37 +211,6 @@ body {
     color: var(--rose-gold);
 }
 
-/* View Button */
-.view-button {
-    margin-top: 1.5rem;
-    padding: 12px 28px;
-    background: rgba(183, 110, 121, 0.15);
-    color: var(--rose-gold);
-    border: 2px solid var(--rose-gold);
-    border-radius: 30px;
-    font-family: 'Playfair Display', serif;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.view-button:hover {
-    background: var(--rose-gold);
-    color: var(--warm-white);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
-}
-
-.view-button span {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
 /* Card reveal animation */
 .card-wrapper.revealed {
     animation: revealCard 0.8s ease-out;
