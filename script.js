@@ -1,5 +1,5 @@
-// Countdown Timer - January 13th, 2026 at 12:00 AM (midnight tonight)
-const targetDate = new Date('2026-01-13T00:00:00').getTime();
+// Countdown Timer - January 25th, 2026 at 12:00 AM (midnight tonight)
+const targetDate = new Date('2026-01-25T00:00:00').getTime();
 
 const countdownWrapper = document.getElementById('countdownWrapper');
 const cardWrapper = document.getElementById('cardWrapper');

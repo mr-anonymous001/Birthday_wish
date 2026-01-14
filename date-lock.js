@@ -1,6 +1,6 @@
 // Date Lock Check - Redirect if accessed before January 25th, 2026
 (function () {
-    const unlockDate = new Date('2026-01-13T00:00:00').getTime();
+    const unlockDate = new Date('2026-01-25T00:00:00').getTime();
     const now = new Date().getTime();
 
     if (now < unlockDate) {
