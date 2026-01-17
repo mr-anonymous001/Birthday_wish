@@ -130,8 +130,13 @@
 }
 
 @media (max-width: 768px) {
+    .wishes-main {
+        padding: 80px 15px 40px;
+    }
+
     .wishes-paper {
         padding: 2rem 1.5rem;
+        min-height: 400px;
     }
 
     .wish-text {
@@ -146,7 +151,79 @@
         padding-left: 1rem;
     }
 
+    .wish-item {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
     .paper-footer .signature {
         font-size: 1.3rem;
+    }
+
+    .paper-footer {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wishes-main {
+        padding: 70px 10px 30px;
+    }
+
+    .wishes-paper {
+        padding: 1.5rem 1rem;
+        min-height: auto;
+    }
+
+    .paper-line {
+        left: 35px;
+    }
+
+    .wish-content {
+        padding-left: 0.8rem;
+    }
+
+    .wish-item {
+        margin-bottom: 1.2rem;
+        padding-left: 1.3rem;
+    }
+
+    .wish-item::before {
+        font-size: 0.9rem;
+    }
+
+    .wish-text {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    .paper-footer {
+        margin-top: 1.5rem;
+        padding-top: 1.2rem;
+        padding-right: 0;
+    }
+
+    .paper-footer p {
+        font-size: 0.85rem;
+    }
+
+    .paper-footer .signature {
+        font-size: 1.1rem;
+    }
+
+    .next-link {
+        margin-top: 2rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .wish-text {
+        font-size: 1rem;
+    }
+
+    .paper-footer .signature {
+        font-size: 1rem;
     }
 }

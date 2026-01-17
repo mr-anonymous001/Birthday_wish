@@ -683,6 +683,10 @@ body {
    RESPONSIVE
    ═══════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
+    .home-container {
+        padding: 80px 15px 40px;
+    }
+
     .greeting-card {
         width: 340px;
         height: 450px;
@@ -702,6 +706,14 @@ body {
 
     .card-inside {
         padding: 2rem;
+    }
+
+    .card-inside::before {
+        width: 40px;
+    }
+
+    .card-inside::after {
+        left: 40px;
     }
 
     .inside-content {
@@ -730,16 +742,144 @@ body {
     .page-title {
         font-size: 2.2rem;
     }
+
+    /* Countdown Timer Responsive */
+    .countdown-card {
+        padding: 2rem 1.5rem;
+        max-width: 100%;
+    }
+
+    .countdown-title {
+        font-size: 1.8rem;
+    }
+
+    .countdown-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .countdown-timer {
+        gap: 0.3rem;
+    }
+
+    .time-block {
+        padding: 0.8rem 0.9rem;
+        min-width: 58px;
+    }
+
+    .time-value {
+        font-size: 1.6rem;
+    }
+
+    .time-label {
+        font-size: 0.6rem;
+    }
+
+    .time-separator {
+        font-size: 1.5rem;
+    }
+
+    .countdown-message {
+        font-size: 0.85rem;
+    }
+
+    .countdown-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Rose decoration */
+    .rose {
+        width: 40px;
+        height: 110px;
+    }
+
+    .rose-bud {
+        font-size: 1.8rem;
+    }
+
+    .rose-stem {
+        height: 60px;
+    }
 }
 
 @media (max-width: 480px) {
+    .home-container {
+        padding: 70px 10px 30px;
+    }
+
     .greeting-card {
-        width: 300px;
-        height: 420px;
+        width: 290px;
+        height: 400px;
+    }
+
+    .card-front {
+        padding: 1.5rem;
     }
 
     .card-title {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+    }
+
+    .card-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .card-label {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .open-button {
+        padding: 12px 24px;
+        font-size: 0.85rem;
+        margin-top: 2rem;
+    }
+
+    .card-inside {
+        padding: 1.5rem;
+    }
+
+    .card-inside::before {
+        width: 30px;
+    }
+
+    .card-inside::after {
+        left: 30px;
+        top: 20px;
+        bottom: 20px;
+    }
+
+    .inside-content {
+        padding-left: 1rem;
+    }
+
+    .message-header {
+        margin-bottom: 1rem;
+    }
+
+    .message-date {
+        font-size: 0.75rem;
+    }
+
+    .message-title {
+        font-size: 1.6rem;
+    }
+
+    .message-body p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 0.8rem;
+    }
+
+    .message-footer {
+        padding-top: 0.8rem;
+    }
+
+    .message-footer p {
+        font-size: 0.85rem;
+    }
+
+    .message-footer .signature {
+        font-size: 1.2rem;
     }
 
     .minimal-nav {
@@ -748,5 +888,154 @@ body {
         left: 50%;
         transform: translateX(-50%);
         width: 95%;
+        top: 10px;
+    }
+
+    .nav-item {
+        font-size: 0.65rem;
+        padding: 6px 10px;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    /* Countdown Timer Very Small Screens */
+    .countdown-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .countdown-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .countdown-title {
+        font-size: 1.5rem;
+    }
+
+    .countdown-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .countdown-timer {
+        gap: 0.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .time-block {
+        padding: 0.6rem 0.7rem;
+        min-width: 50px;
+    }
+
+    .time-value {
+        font-size: 1.4rem;
+    }
+
+    .time-label {
+        font-size: 0.55rem;
+        letter-spacing: 0.5px;
+    }
+
+    .time-separator {
+        font-size: 1.2rem;
+    }
+
+    .countdown-message {
+        font-size: 0.8rem;
+    }
+
+    .countdown-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Rose */
+    .rose-container {
+        margin: 1rem 0;
+    }
+
+    .rose {
+        width: 35px;
+        height: 90px;
+    }
+
+    .rose-bud {
+        font-size: 1.5rem;
+    }
+
+    .rose-stem {
+        height: 45px;
+        width: 2px;
+    }
+
+    .rose-leaf {
+        width: 10px;
+        height: 14px;
+    }
+
+    .leaf-left {
+        left: -8px;
+        top: 18px;
+    }
+
+    .leaf-right {
+        right: -8px;
+        top: 32px;
+    }
+
+    /* Buttons */
+    .continue-link,
+    .next-button,
+    .home-button,
+    .bouquet-link {
+        font-size: 0.8rem;
+        padding: 10px 22px;
+    }
+}
+
+/* Extra small screens (320px) */
+@media (max-width: 360px) {
+    .greeting-card {
+        width: 260px;
+        height: 360px;
+    }
+
+    .card-title {
+        font-size: 1.9rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+    .message-title {
+        font-size: 1.4rem;
+    }
+
+    .message-body p {
+        font-size: 1rem;
+    }
+
+    .countdown-timer {
+        gap: 0.15rem;
+    }
+
+    .time-block {
+        padding: 0.5rem 0.5rem;
+        min-width: 42px;
+    }
+
+    .time-value {
+        font-size: 1.2rem;
+    }
+
+    .time-separator {
+        font-size: 1rem;
+    }
+
+    .nav-item {
+        font-size: 0.6rem;
+        padding: 5px 8px;
     }
 }

@@ -474,9 +474,11 @@
         opacity: 1;
         transform: translate(0, 0) rotate(0deg) scale(0);
     }
+
     10% {
         transform: translate(0, 0) rotate(0deg) scale(1.2);
     }
+
     100% {
         opacity: 0;
         transform: translate(var(--end-x), var(--end-y)) rotate(720deg) scale(0.5);
@@ -513,7 +515,7 @@
     font-weight: 700;
     color: var(--warm-white);
     margin: 0;
-    text-shadow: 
+    text-shadow:
         0 0 20px rgba(255, 255, 255, 0.5),
         0 0 40px rgba(183, 110, 121, 0.8),
         0 0 60px rgba(183, 110, 121, 0.6),
@@ -533,6 +535,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -543,6 +546,7 @@
         transform: scale(0);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -551,14 +555,15 @@
 
 @keyframes glow {
     from {
-        text-shadow: 
+        text-shadow:
             0 0 20px rgba(255, 255, 255, 0.5),
             0 0 40px rgba(183, 110, 121, 0.8),
             0 0 60px rgba(183, 110, 121, 0.6),
             0 0 80px rgba(183, 110, 121, 0.4);
     }
+
     to {
-        text-shadow: 
+        text-shadow:
             0 0 30px rgba(255, 255, 255, 0.7),
             0 0 60px rgba(183, 110, 121, 1),
             0 0 90px rgba(183, 110, 121, 0.8),
@@ -567,9 +572,12 @@
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -602,6 +610,20 @@
 }
 
 @media (max-width: 768px) {
+    .cake-main {
+        padding: 80px 15px 40px;
+    }
+
+    .cake-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .cake-wrapper {
+        min-height: 350px;
+        margin: 2rem 0;
+    }
+
     .cake {
         width: 250px;
         height: 310px;
@@ -668,6 +690,241 @@
     .birthday-subtext {
         font-size: 2.5rem;
     }
+
+    .blow-button {
+        font-size: 0.85rem;
+        padding: 10px 22px;
+    }
+
+    .message-paper {
+        padding: 1.5rem;
+    }
+
+    .message-paper p {
+        font-size: 1.2rem;
+    }
+
+    .ribbon-1 {
+        width: 220px;
+        left: 15px;
+        bottom: 105px;
+    }
+
+    .ribbon-2 {
+        width: 180px;
+        left: 35px;
+        bottom: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cake-main {
+        padding: 70px 10px 30px;
+    }
+
+    .cake-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cake-wrapper {
+        min-height: 300px;
+        margin: 1.5rem 0;
+    }
+
+    .cake {
+        width: 200px;
+        height: 260px;
+    }
+
+    .layer-1 {
+        width: 200px;
+        height: 68px;
+    }
+
+    .layer-2 {
+        width: 168px;
+        height: 60px;
+        left: 16px;
+        bottom: 68px;
+    }
+
+    .layer-3 {
+        width: 136px;
+        height: 52px;
+        left: 32px;
+        bottom: 128px;
+    }
+
+    .frosting-1 {
+        width: 200px;
+        height: 20px;
+        bottom: 68px;
+    }
+
+    .frosting-2 {
+        width: 168px;
+        height: 18px;
+        bottom: 128px;
+        left: 16px;
+    }
+
+    .frosting-3 {
+        width: 136px;
+        height: 16px;
+        bottom: 180px;
+        left: 32px;
+    }
+
+    .candles {
+        gap: 8px;
+        bottom: 180px;
+    }
+
+    .candle {
+        width: 6px;
+        height: 35px;
+    }
+
+    .flame {
+        width: 6px;
+        height: 12px;
+        top: -14px;
+    }
+
+    .candle-ribbon {
+        width: 10px;
+        height: 2px;
+        top: 12px;
+    }
+
+    .edible-flower,
+    .edible-star {
+        font-size: 1rem;
+    }
+
+    .birthday-text {
+        font-size: 3rem;
+    }
+
+    .birthday-subtext {
+        font-size: 2rem;
+    }
+
+    .blow-button {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+        margin-top: 1.5rem;
+    }
+
+    .message-paper {
+        padding: 1.2rem;
+    }
+
+    .message-paper p {
+        font-size: 1.1rem;
+    }
+
+    .ribbon-1 {
+        width: 180px;
+        left: 10px;
+        bottom: 88px;
+    }
+
+    .ribbon-2 {
+        width: 148px;
+        left: 26px;
+        bottom: 150px;
+    }
+
+    .flower-1 {
+        bottom: 95px;
+        left: 8%;
+    }
+
+    .flower-2 {
+        bottom: 95px;
+        right: 8%;
+    }
+
+    .flower-3 {
+        bottom: 165px;
+    }
+
+    .star-1 {
+        bottom: 160px;
+        font-size: 1rem;
+    }
+
+    .star-2 {
+        bottom: 160px;
+        font-size: 1rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .cake {
+        width: 170px;
+        height: 220px;
+    }
+
+    .layer-1 {
+        width: 170px;
+        height: 58px;
+    }
+
+    .layer-2 {
+        width: 142px;
+        height: 50px;
+        left: 14px;
+        bottom: 58px;
+    }
+
+    .layer-3 {
+        width: 114px;
+        height: 44px;
+        left: 28px;
+        bottom: 108px;
+    }
+
+    .frosting-1 {
+        width: 170px;
+        height: 16px;
+        bottom: 58px;
+    }
+
+    .frosting-2 {
+        width: 142px;
+        height: 14px;
+        bottom: 108px;
+        left: 14px;
+    }
+
+    .frosting-3 {
+        width: 114px;
+        height: 12px;
+        bottom: 152px;
+        left: 28px;
+    }
+
+    .candles {
+        gap: 6px;
+        bottom: 152px;
+    }
+
+    .candle {
+        width: 5px;
+        height: 28px;
+    }
+
+    .birthday-text {
+        font-size: 2.2rem;
+    }
+
+    .birthday-subtext {
+        font-size: 1.5rem;
+    }
 }
 
 @keyframes fadeInUp {
@@ -675,6 +932,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

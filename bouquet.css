@@ -269,6 +269,15 @@
 }
 
 @media (max-width: 768px) {
+    .bouquet-main {
+        padding: 80px 15px 40px;
+    }
+
+    .bouquet-wrapper {
+        min-height: 320px;
+        margin: 2rem 0;
+    }
+
     .bouquet {
         width: 240px;
         height: 330px;
@@ -277,6 +286,11 @@
     .vase {
         width: 95px;
         height: 120px;
+    }
+
+    .vase::before {
+        width: 80px;
+        height: 15px;
     }
 
     .flowers {
@@ -309,5 +323,126 @@
 
     .message-text p {
         font-size: 1.1rem;
+    }
+
+    .bouquet-message {
+        margin: 2rem 0;
+    }
+
+    .signature-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bouquet-main {
+        padding: 70px 10px 30px;
+    }
+
+    .bouquet-wrapper {
+        min-height: 280px;
+        margin: 1.5rem 0;
+    }
+
+    .bouquet {
+        width: 200px;
+        height: 280px;
+    }
+
+    .vase {
+        width: 80px;
+        height: 100px;
+    }
+
+    .vase::before {
+        width: 68px;
+        height: 12px;
+    }
+
+    .flowers {
+        width: 180px;
+        height: 160px;
+        bottom: 100px;
+    }
+
+    .leaves {
+        width: 180px;
+        height: 160px;
+        bottom: 100px;
+    }
+
+    .flower {
+        font-size: 1.5rem;
+    }
+
+    .leaf {
+        font-size: 1rem;
+    }
+
+    .bouquet-message {
+        margin: 1.5rem 0;
+    }
+
+    .message-paper {
+        padding: 1.5rem 1rem;
+    }
+
+    .paper-line {
+        left: 35px;
+    }
+
+    .message-text {
+        padding-left: 0.8rem;
+    }
+
+    .message-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .message-signature {
+        margin-top: 1.5rem;
+    }
+
+    .message-signature p {
+        font-size: 0.85rem;
+    }
+
+    .signature-name {
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .bouquet {
+        width: 170px;
+        height: 240px;
+    }
+
+    .vase {
+        width: 68px;
+        height: 85px;
+    }
+
+    .flowers {
+        width: 150px;
+        height: 130px;
+        bottom: 85px;
+    }
+
+    .leaves {
+        width: 150px;
+        height: 130px;
+        bottom: 85px;
+    }
+
+    .flower {
+        font-size: 1.3rem;
+    }
+
+    .message-text p {
+        font-size: 0.95rem;
     }
 }

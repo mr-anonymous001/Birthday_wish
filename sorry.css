@@ -119,6 +119,10 @@
 }
 
 @media (max-width: 768px) {
+    .sorry-main {
+        padding: 80px 15px 40px;
+    }
+
     .message-paper {
         padding: 2rem 1.5rem;
     }
@@ -141,5 +145,83 @@
 
     .message-content {
         padding-left: 1rem;
+    }
+
+    .letter-signature {
+        padding-right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sorry-main {
+        padding: 70px 10px 30px;
+    }
+
+    .message-paper {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .paper-line {
+        left: 35px;
+    }
+
+    .message-content {
+        padding-left: 0.8rem;
+    }
+
+    .letter-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .letter-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .date {
+        font-size: 0.75rem;
+    }
+
+    .message-body p {
+        font-size: 1.05rem;
+        margin-bottom: 1rem;
+        line-height: 1.7;
+    }
+
+    .highlight-message {
+        margin: 1.5rem 0;
+        padding: 1.2rem;
+    }
+
+    .highlight-message p {
+        font-size: 1.1rem;
+    }
+
+    .letter-signature {
+        margin-top: 1.5rem;
+        padding-right: 0;
+    }
+
+    .letter-signature p {
+        font-size: 0.85rem;
+    }
+
+    .signature-name {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .letter-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .message-body p {
+        font-size: 1rem;
+    }
+
+    .highlight-message p {
+        font-size: 1rem;
     }
 }
