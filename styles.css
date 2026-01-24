@@ -603,7 +603,7 @@ body {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   FLOATING ELEMENTS (Subtle)
+   FLOWING FLOWERS BACKGROUND
    ═══════════════════════════════════════════════════════════════ */
 .floating-elements {
     position: fixed;
@@ -616,6 +616,7 @@ body {
     overflow: hidden;
 }
 
+/* Legacy support for old elements */
 .floating-element {
     position: absolute;
     font-size: 1.2rem;
@@ -625,6 +626,54 @@ body {
     color: var(--rose-gold);
 }
 
+/* Beautiful flowing flowers */
+.floating-flower {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.2;
+    filter: blur(0.3px);
+    animation: flowAndSway var(--duration, 30s) ease-in-out infinite;
+    --sway-amount: 50px;
+    --rotation: 0deg;
+    --start-position: 110vh;
+}
+
+@keyframes flowAndSway {
+    0% {
+        transform: translateY(var(--start-position, 110vh)) translateX(0) rotate(0deg);
+        opacity: 0.2;
+    }
+
+    10% {
+        opacity: 0.22;
+    }
+
+    25% {
+        transform: translateY(calc(var(--start-position, 110vh) - 35vh)) translateX(calc(var(--sway-amount) * -1)) rotate(90deg);
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: translateY(calc(var(--start-position, 110vh) - 60vh)) translateX(var(--sway-amount)) rotate(180deg);
+        opacity: 0.2;
+    }
+
+    75% {
+        transform: translateY(calc(var(--start-position, 110vh) - 85vh)) translateX(calc(var(--sway-amount) * -0.5)) rotate(270deg);
+        opacity: 0.18;
+    }
+
+    95% {
+        opacity: 0.12;
+    }
+
+    100% {
+        transform: translateY(calc(var(--start-position, 110vh) - 120vh)) translateX(0) rotate(var(--rotation)) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Additional gentle floating for variety */
 @keyframes float {
     0% {
         transform: translateY(100vh) rotate(0deg);
